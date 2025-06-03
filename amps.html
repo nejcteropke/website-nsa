@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvočniki in ojačevalci - Guitar Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Zvočniki in ojačevalci</h1>
+        <p>Odkrijte našo široko ponudbo ojačevalcev in zvočnikov</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="slike/Glogo.png" alt="Guitar Store Logo" style="height: 40px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Domov</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-guitar me-1"></i> Izdelki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="electric-guitars.html">Električne kitare</a></li>
+                            <li><a class="dropdown-item" href="acoustic-guitars.html">Akustične kitare</a></li>
+                            <li><a class="dropdown-item active" href="amps.html">Zvočniki in ojačevalci</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-toolbox me-1"></i> Pripomočki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                            <li><a class="dropdown-item" href="pripomocki/cables.html">Kabli</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/picks.html">Trzalice</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/straps.html">Pasovi</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/tuners.html">Uglaševalci</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i> O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope me-1"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seznam ojačevalcev -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Marshall JCM 800 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike\jcm800.jpg" class="card-img-top" alt="Marshall JCM 800">
+                    <div class="card-body">
+                        <h5 class="card-title">Marshall JCM 800</h5>
+                        <p class="card-text">Ikonični ojačevalec, ki je definiral zvok rock glasbe 80-ih.</p>
+                        <p><strong>1999,99 €</strong></p>
+                        <a href="amps/jcm.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slash Signature Amp -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike\marshall slash.jpg" class="card-img-top" alt="Marshall Slash Signature">
+                    <div class="card-body">
+                        <h5 class="card-title">Marshall Slash Signature</h5>
+                        <p class="card-text">Ojačevalec, zasnovan v sodelovanju s Slashom, z značilnim zvokom.</p>
+                        <p><strong>2499,99 €</strong></p>
+                        <a href="amps/mslash.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fender Blues Junior -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike\fenderblues.jpg" class="card-img-top" alt="Fender Blues Junior">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender Blues Junior</h5>
+                        <p class="card-text">Kompakten cevni ojačevalec z bogatim blues tonom.</p>
+                        <p><strong>699,99 €</strong></p>
+                        <a href="amps/fenderblues.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Orange Rockerverb 50 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike\orange.jpg" class="card-img-top" alt="Orange Rockerverb 50">
+                    <div class="card-body">
+                        <h5 class="card-title">Orange Rockerverb 50</h5>
+                        <p class="card-text">Vsestranski ojačevalec z močnim zvokom in odličnim reverbom.</p>
+                        <p><strong>1799,99 €</strong></p>
+                        <a href="amps/orange.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vox AC30 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike\vox.jpg" class="card-img-top" alt="Vox AC30">
+                    <div class="card-body">
+                        <h5 class="card-title">Vox AC30</h5>
+                        <p class="card-text">Klasični britanski ojačevalec z značilnim "chime" zvokom.</p>
+                        <p><strong>1499,99 €</strong></p>
+                        <a href="amps/vox.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mesa Boogie Dual Rectifier -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike\mesa.jpg" class="card-img-top" alt="Mesa Boogie Dual Rectifier">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesa Boogie Dual Rectifier</h5>
+                        <p class="card-text">Močan ojačevalec za metal in rock glasbo z agresivnim zvokom.</p>
+                        <p><strong>2499,99 €</strong></p>
+                        <a href="amps/mesa.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Guitar Store. Vse pravice pridržane.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

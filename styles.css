@@ -1,0 +1,797 @@
+/* --------------------------------------------------
+   Guitar Store - CSS Stilska datoteka
+   -------------------------------------------------- */
+
+/* Osnovne spremenljivke za barve */
+:root {
+    --primary: #c28b00;         /* Glavna zlata barva */
+    --primary-dark: #a87800;    /* Temnejši odtenek glavne barve */
+    --secondary: #2d2d2d;       /* Temno siva za ozadja */
+    --accent: #d94d1a;          /* Oranžno rdeča za poudarke */
+    --light: #f5f0e6;           /* Svetla bež za ozadja */
+    --dark: #1a1a1a;            /* Skoraj črna */
+    --text: #333333;            /* Osnovna barva besedila */
+    --text-light: #f8f8f8;      /* Svetla barva besedila */
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Senca za elemente */
+}
+
+/* Osnovni stil telesa */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* Tipografija za naslove */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+h1 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary);
+}
+
+/* Osnovni stil odstavkov */
+p {
+    margin-bottom: 1.2rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Povezave */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+/* Header z ozadjem in centriranim besedilom */
+header {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.808)), url('/api/placeholder/1920/600') no-repeat center center;
+    background-size: cover;
+    color: var(--text-light);
+    padding: 8rem 0;
+    margin-bottom: 0;
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigacija */
+.navbar {
+    background-color: var(--secondary) !important;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-light);
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--primary);
+}
+
+/* Dropdown meni v navigaciji */
+.dropdown-menu {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: var(--box-shadow);
+}
+
+.dropdown-item {
+    color: var(--text-light);
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+/* Košarica v meniju */
+.navbar-nav li a.dropdown-item[href="basket.html"] {
+    color: var(--text-light);
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav li a.dropdown-item[href="basket.html"]:hover {
+    background-color: #b73c11;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav li a.dropdown-item[href="basket.html"]::before {
+    content: "\f07a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Košarica - večji odmik na večjih zaslonih */
+@media (min-width: 992px) {
+    .navbar-nav li a.dropdown-item[href="basket.html"] {
+      margin-left: 15px;
+    }
+}
+
+/* Gumbi */
+.btn {
+    border-radius: 4px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-shadow: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-dark {
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* Dobrodošli sekcija */
+.welcome-section {
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 2.5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    border-radius: 8px 8px 0 0;
+}
+
+/* Kartice izdelkov */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-fit: contain; /* Prikaže celotno sliko znotraj okvirja */
+    background-color: #ffffff00; /* Prosojno ozadje slike */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: var(--secondary);
+}
+
+.card-text {
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.card .btn {
+    margin-top: 0.5rem;
+}
+
+/* Predstavitev prednosti (ikone) */
+.fa-3x {
+    font-size: 3em;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.bg-white {
+    transition: all 0.3s ease;
+}
+
+.bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bg-white:hover .fa-3x {
+    transform: scale(1.1);
+}
+
+/* Filtri za izdelke */
+.list-group-item.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--primary);
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--text-light);
+}
+
+footer .fab {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+footer .fab:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive prilagoditve */
+@media (max-width: 991px) {
+    header {
+      padding: 6rem 0;
+    }
+    header h1 {
+      font-size: 2.8rem;
+    }
+    .navbar-collapse {
+      background-color: var(--secondary);
+      padding: 1rem;
+      border-radius: 0.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+      padding: 4rem 0;
+    }
+    header h1 {
+      font-size: 2.2rem;
+    }
+    .welcome-section {
+      padding: 1.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+}
+
+/* Animacije za fade-in efekt */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card, .welcome-section, .bg-white {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Posebne strani - električne kitare */
+.product-details {
+    padding: 2rem;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+/* Cenovni razpon */
+strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Za posebne poudarke */
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    border-radius: 1.5px;
+}
+
+/* Za galerijo izdelkov */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.gallery-item img {
+    transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Stil za oznake popustov */
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Oznake novosti */
+.new-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Košarica stran */
+.cart-page {
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    margin: 25px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--secondary);
+}
+
+.cart-item-price {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+}
+
+.cart-quantity {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}
+
+.cart-remove {
+    color: #e74c3c;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+
+.cart-remove:hover {
+    color: #c0392b;
+    transform: scale(1.1);
+}
+
+.cart-summary {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-total {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #eee;
+}
+
+.checkout-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Indikator števila izdelkov v košarici */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Aktivna povezava v navigaciji */
+.nav-link.active {
+    color: #ffc107 !important; /* Rumena barva pisave */
+    font-weight: bold; /* Krepi pisavo */
+    background-color: #343a40; /* Temno ozadje (enako kot navbar) */
+    border-radius: 5px; /* Zaobljeni robovi */
+    padding: 5px 10px; /* Dodaten prostor okoli besedila */
+}
+
+/* Carousel puščice */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.534); /* Temno ozadje za boljšo vidljivost */
+    border-radius: 50%; /* Zaobljene puščice */
+    width: 30px; /* Širina puščice */
+    height: 30px; /* Višina puščice */
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    font-size: 20px; /* Velikost ikone */
+    color: rgb(255, 255, 255); /* Barva ikone */
+}
+
+/* Stiliziran audio predvajalnik */
+.custom-audio-container {
+  background: linear-gradient(135deg, var(--light), #ffffff);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+  position: relative;
+}
+
+.custom-audio-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+}
+
+.audio-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+.audio-label::before {
+  content: "\f025";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  color: var(--primary);
+}
+
+.custom-audio-container audio {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+}
+
+/* Stran za podrobnosti izdelka */
+.product-detail-page {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+.product-info {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  height: fit-content;
+}
+.product-info h3 {
+  color: var(--secondary);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+}
+.product-info h3:first-child {
+  margin-top: 0;
+}
+.product-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+.product-info ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eaeaea;
+  transition: all 0.2s ease;
+}
+.product-info ul li:hover {
+  background-color: #f8f9fa;
+  padding-left: 10px;
+}
+.product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 1.5rem 0;
+}
+.product-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Stiliziran audio predvajalnik */
+.custom-audio-container {
+  background: linear-gradient(135deg, var(--light), #ffffff);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+  position: relative;
+}
+.custom-audio-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+}
+.audio-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+.audio-label::before {
+  content: "\f025";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  color: var(--primary);
+}
+.custom-audio-container audio {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+}
+
+/* Stiliziran video predvajalnik */
+.custom-video-container {
+  background: linear-gradient(135deg, var(--light), #ffffff);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+  position: relative;
+}
+.custom-video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+}
+.video-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+.video-label::before {
+  content: "\f03d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  color: var(--primary);
+}
+.custom-video-container video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.custom-video-container video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Efekt za prikaz dodatne slike ob hoverju na logo */
+.logo-hover-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dodatna slika, ki se pojavi ob hoverju na logo */
+.extra-logo {
+    position: absolute;
+    left: 25%;         
+    top: -75px;          
+    height: 290px;   
+    opacity: 0;
+    transform: translateX(-20px); 
+    transition: opacity 0.4s, transform 0.4s;
+    pointer-events: none;
+}
+
+/* Prikaz dodatne slike ob hoverju */
+.logo-hover-wrap:hover .extra-logo {
+    opacity: 1;
+    transform: translateX(0); 
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marshall JCM800 - Guitar Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Guitar Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Domov</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../amps.html"><i class="fas fa-volume-up me-1"></i> Ojačevalci</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Podrobnosti o ojačevalcu -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Marshall JCM800</h1>
+            <div class="row">
+                <!-- Stolpec za slike -->
+                <div class="col-md-6">
+                    <!-- Bootstrap Carousel -->
+                    <div id="ampCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../slike\jcm800.jpg" class="d-block w-100" alt="Marshall JCM800 - Slika 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../slike\jcm800_2.jpg" class="d-block w-100" alt="Marshall JCM800 - Slika 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../slike\jcm800_3.jpg" class="d-block w-100" alt="Marshall JCM800 - Slika 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../slike\jcm800_4.jpg" class="d-block w-100" alt="Marshall JCM800 - Slika 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ampCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Prejšnja</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ampCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Naslednja</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stolpec za opis in specifikacije -->
+                <div class="col-md-6">
+                    <h3>Opis</h3>
+                    <p>Marshall JCM800 je eden najbolj ikoničnih ojačevalcev v zgodovini rock glasbe. Značilen je po svojem močnem, agresivnem zvoku in preprostem dizajnu, ki omogoča enostavno uporabo.</p>
+                    <h3>Specifikacije</h3>
+                    <ul>
+                        <li><strong>Moč:</strong> 100 W</li>
+                        <li><strong>Tip:</strong> Cevni ojačevalec</li>
+                        <li><strong>Kanali:</strong> 1</li>
+                        <li><strong>EQ:</strong> Bass, Middle, Treble</li>
+                        <li><strong>Vhodi:</strong> High in Low Input</li>
+                        <li><strong>Izdelava:</strong> Masivno ohišje z zlato ploščo</li>
+                        <li><strong>Posebnosti:</strong> Klasičen Marshall zvok, idealen za rock in metal</li>
+                    </ul>
+                    <h3>Cena: 1999,99 €</h3>
+                    <button class="btn btn-primary">Dodaj v košarico</button>
+                    <a href="../amps.html" class="btn btn-secondary">Nazaj</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Guitar Store. Vse pravice pridržane.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

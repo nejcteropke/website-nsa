@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasovi - Guitar Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Pasovi za kitaro</h1>
+        <p>Izberite udoben in kakovosten pas za vašo kitaro</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../slike/Glogo.png" alt="Guitar Store Logo" style="height: 40px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Domov</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-guitar me-1"></i> Izdelki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../electric-guitars.html">Električne kitare</a></li>
+                            <li><a class="dropdown-item" href="../acoustic-guitars.html">Akustične kitare</a></li>
+                            <li><a class="dropdown-item" href="../amps.html">Zvočniki in ojačevalci</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-toolbox me-1"></i> Pripomočki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                            <li><a class="dropdown-item" href="cables.html">Kabli</a></li>
+                            <li><a class="dropdown-item" href="picks.html">Trzalice</a></li>
+                            <li><a class="dropdown-item active" href="straps.html">Pasovi</a></li>
+                            <li><a class="dropdown-item" href="tuners.html">Uglaševalci</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html"><i class="fas fa-info-circle me-1"></i> O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html"><i class="fas fa-envelope me-1"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vsebina za pasove -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="../slike/fenderstrap.jpg" class="card-img-top" alt="Fender Monogrammed Strap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender Monogrammed Strap</h5>
+                        <p class="card-text">Klasičen pas z legendarnim Fender dizajnom.</p>
+                        <p><strong>19,99 €</strong></p>
+                        <a href="strap1.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="../slike/polypro.jpg" class="card-img-top" alt="Ernie Ball Polypro">
+                    <div class="card-body">
+                        <h5 class="card-title">Ernie Ball Polypro</h5>
+                        <p class="card-text">Vzdržljiv in udoben pas iz polipropilena.</p>
+                        <p><strong>11,99 €</strong></p>
+                        <a href="strap2.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="../slike/levy's.jpg" class="card-img-top" alt="Levy's Leather Strap">
+                    <div class="card-body">
+                        <h5 class="card-title">Levy's Leather Strap</h5>
+                        <p class="card-text">Usnjen pas za maksimalno udobje in vzdržljivost.</p>
+                        <p><strong>29,99 €</strong></p>
+                        <a href="strap3.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="../slike/autolock.jpg" class="card-img-top" alt="D'Addario Auto Lock">
+                    <div class="card-body">
+                        <h5 class="card-title">D'Addario Auto Lock</h5>
+                        <p class="card-text">Pas z avtomatskim zaklepom za dodatno varnost.</p>
+                        <p><strong>24,99 €</strong></p>
+                        <a href="strap4.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="../slike/powerpad.jpg" class="card-img-top" alt="Ibanez Powerpad">
+                    <div class="card-body">
+                        <h5 class="card-title">Ibanez Powerpad</h5>
+                        <p class="card-text">Mehak in nastavljiv pas za vse vrste kitar.</p>
+                        <p><strong>14,99 €</strong></p>
+                        <a href="strap5.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="../slike/woven.jpg" class="card-img-top" alt="Planet Waves Woven">
+                    <div class="card-body">
+                        <h5 class="card-title">Planet Waves Woven</h5>
+                        <p class="card-text">Tkan pas z unikatnim vzorcem in udobno podlogo.</p>
+                        <p><strong>17,99 €</strong></p>
+                        <a href="strap6.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Guitar Store. Vse pravice pridržane.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

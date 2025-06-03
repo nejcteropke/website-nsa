@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Store - Domov</title>
+    <!-- Google Fonts - Montserrat & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome za ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container text-center">
+            <div class="logo-hover-wrap" style="display: inline-block; position: relative;">
+                <img src="slike/Glogo.png" alt="Guitar Store Logo" class="main-logo" style="height: 140px;">
+                <img src="slike/textlogo.png" alt="Text-logo" class="extra-logo" >
+            </div>
+            <h1></h1>
+            <p>Vse za kitariste – kitare, oprema in dodatki</p>
+        </div>
+    </header>
+
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i> Domov</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-guitar me-1"></i> Izdelki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="electric-guitars.html">Električne kitare</a></li>
+                            <li><a class="dropdown-item" href="acoustic-guitars.html">Akustične kitare</a></li>
+                            <li><a class="dropdown-item" href="amps.html">Zvočniki in ojačevalci</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-toolbox me-1"></i> Pripomočki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                            <li><a class="dropdown-item" href="pripomocki/cables.html">Kabli</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/picks.html">Trzalice</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/straps.html">Pasovi</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/tuners.html">Uglaševalci</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i> O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope me-1"></i> Kontakt</a>
+                    </li>
+                    
+                </ul>
+                    
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dobrodošli sekcija -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="welcome-section text-center">
+                    <h2>Dobrodošli v Guitar Store!</h2>
+                    <p class="lead">Guitar Store je spletna trgovina, kjer lahko najdete vse, kar potrebujete za igranje in nego svoje kitare. Ne glede na to, ali ste začetnik ali profesionalni kitarist, imamo širok spekter kitar, ojačevalcev, dodatkov in opreme, ki bo zadovoljila vse vaše potrebe.</p>
+                    <p>Naša trgovina ponuja izdelke priznanih znamk, ki zagotavljajo kakovost in vzdržljivost, da boste uživali v svoji glasbi še dolgo časa. Preverite našo ponudbo, poiščite svoj naslednji instrument in bodite pripravljeni na glasbeno popotovanje!</p>
+                    <a href="electric-guitars.html" class="btn btn-primary m-2">Električne kitare</a>
+                    <a href="acoustic-guitars.html" class="btn btn-primary m-2">Akustične kitare</a>
+                    <a href="amps.html" class="btn btn-primary m-2">Zvočniki in ojačevalci</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Najbolj prodajani izdelki -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Najbolj prodajani izdelki</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/stratocaster.jpg" class="card-img-top" alt="Fender Stratocaster">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender Stratocaster</h5>
+                        <p class="card-text">Legendarna električna kitara s tremi single-coil pickupi in značilnim zvokom.</p>
+                        <p><strong>699,99 €</strong></p>
+                        <a href="electric-guitars.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/martin.jpg" class="card-img-top" alt="Martin D-15M">
+                    <div class="card-body">
+                        <h5 class="card-title">Martin D-15M</h5>
+                        <p class="card-text">Akustična kitara iz masivnega mahagonija z bogatim, toplim zvokom.</p>
+                        <p><strong>1299,99 €</strong></p>
+                        <a href="acoustic-guitars.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/jcm800.jpg" class="card-img-top" alt="Marshall JCM800">
+                    <div class="card-body">
+                        <h5 class="card-title">Marshall JCM800</h5>
+                        <p class="card-text">100W cevni ojačevalec, ki je definiral zvok rock glasbe 80-ih.</p>
+                        <p><strong>749,99 €</strong></p>
+                        <a href="amps.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Predstavitev prednosti -->
+    <section class="py-5" style="background-color: #f1f5f9;">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>Zakaj izbrati nas?</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded-3 shadow h-100">
+                        <i class="fas fa-check-circle fa-3x mb-3" style="color: var(--primary);"></i>
+                        <h3 class="h4 mb-3">Kakovost</h3>
+                        <p>Naši izdelki so skrbno izbrani in preverjeni, da zagotovimo vrhunsko kakovost.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded-3 shadow h-100">
+                        <i class="fas fa-truck fa-3x mb-3" style="color: var(--secondary);"></i>
+                        <h3 class="h4 mb-3">Hitra dostava</h3>
+                        <p>Dostavljamo po vsej Sloveniji, običajno v 1-3 delovnih dneh.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded-3 shadow h-100">
+                        <i class="fas fa-headset fa-3x mb-3" style="color: var(--accent);"></i>
+                        <h3 class="h4 mb-3">Podpora strankam</h3>
+                        <p>Vedno smo na voljo za pomoč in svetovanje pri izbiri najboljših izdelkov za vas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Guitar Store. Vse pravice pridržane.</p>
+            <p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </p>
+            <p><a href="#">Politika zasebnosti</a> | <a href="#">Pogoji uporabe</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS in odvisnosti -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

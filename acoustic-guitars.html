@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akustične kitare - Guitar Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Akustične kitare</h1>
+        <p>Odkrijte našo široko ponudbo akustičnih kitar</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="slike/Glogo.png" alt="Guitar Store Logo" style="height: 40px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Domov</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-guitar me-1"></i> Izdelki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="electric-guitars.html">Električne kitare</a></li>
+                            <li><a class="dropdown-item active" href="acoustic-guitars.html">Akustične kitare</a></li>
+                            <li><a class="dropdown-item" href="amps.html">Zvočniki in ojačevalci</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-toolbox me-1"></i> Pripomočki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                            <li><a class="dropdown-item" href="pripomocki/cables.html">Kabli</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/picks.html">Trzalice</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/straps.html">Pasovi</a></li>
+                            <li><a class="dropdown-item" href="pripomocki/tuners.html">Uglaševalci</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i> O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope me-1"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seznam akustičnih kitar -->
+    <div class="container my-5">
+        <div class="row">
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/martin.jpg" class="card-img-top" alt="Martin D-15M">
+                    <div class="card-body">
+                        <h5 class="card-title">Martin D-15M</h5>
+                        <p class="card-text">Akustična kitara iz masivnega mahagonija z bogatim, toplim zvokom.</p>
+                        <p><strong>1299,99 €</strong></p>
+                        <a href="acoustic/martin.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/taylor.jpg" class="card-img-top" alt="Taylor 214CE">
+                    <div class="card-body">
+                        <h5 class="card-title">Taylor 214CE</h5>
+                        <p class="card-text">Kitara z vrhunskim zvokom in udobnim igranjem, idealna za vse glasbene stile.</p>
+                        <p><strong>999,99 €</strong></p>
+                        <a href="acoustic/taylor.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/gibson.jpg" class="card-img-top" alt="Gibson J-45">
+                    <div class="card-body">
+                        <h5 class="card-title">Gibson J-45</h5>
+                        <p class="card-text">Legendarna akustična kitara z močnim in uravnoteženim zvokom.</p>
+                        <p><strong>2499,99 €</strong></p>
+                        <a href="acoustic/gibson.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/YAMAHA.jpg" class="card-img-top" alt="Yamaha FG800">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha FG800</h5>
+                        <p class="card-text">Odlična izbira za začetnike z bogatim in jasnim zvokom.</p>
+                        <p><strong>299,99 €</strong></p>
+                        <a href="acoustic/yamaha.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/fender.jpg" class="card-img-top" alt="Fender CD-60S">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender CD-60S</h5>
+                        <p class="card-text">Kakovostna kitara z masivno smrekovo ploščo in udobnim vratom.</p>
+                        <p><strong>199,99 €</strong></p>
+                        <a href="acoustic/fender.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="slike/seagull.jpg" class="card-img-top" alt="Seagull S6 Original">
+                    <div class="card-body">
+                        <h5 class="card-title">Seagull S6 Original</h5>
+                        <p class="card-text">Kanadska izdelava z bogatim tonom in vrhunsko kakovostjo.</p>
+                        <p><strong>599,99 €</strong></p>
+                        <a href="acoustic/seagull.html" class="btn btn-primary btn-sm">Več informacij</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Guitar Store. Vse pravice pridržane.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibson Les Paul Slash - Guitar Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Guitar Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Domov</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../electric-guitars.html"><i class="fas fa-guitar me-1"></i> Električne kitare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Podrobnosti o kitari -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Gibson Les Paul Slash</h1>
+            <div class="row">
+                <!-- Stolpec za slike -->
+                <div class="col-md-6">
+                    <!-- Bootstrap Carousel -->
+                    <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../slike\victoria.jpg" class="d-block w-100" alt="Gibson Les Paul Slash - Slika 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../slike\victoria2.jpg" class="d-block w-100" alt="Gibson Les Paul Slash - Slika 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../slike\victoria3.jpg" class="d-block w-100" alt="Gibson Les Paul Slash - Slika 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../slike\victoria4.jpg" class="d-block w-100" alt="Gibson Les Paul Slash - Slika 4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Prejšnja</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Naslednja</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stolpec za opis in specifikacije -->
+                <div class="col-md-6">
+                    <h3>Opis</h3>
+                    <p>Gibson Les Paul Slash je ikonična kitara, ki jo uporablja legendarni kitarist Slash. Značilna je po svojem bogatem zvoku, vrhunski izdelavi in edinstvenem dizajnu.</p>
+                    <h3>Specifikacije</h3>
+                    <ul>
+                        <li><strong>Les telesa:</strong> Mahagonij z javorjevo zgornjo ploščo</li>
+                        <li><strong>Vrat:</strong> Mahagonij</li>
+                        <li><strong>Oblika vratu:</strong> Slash Custom "C" profil</li>
+                        <li><strong>Fingerboard:</strong> Palisander (Rosewood)</li>
+                        <li><strong>Radius fingerboarda:</strong> 12" (30,48 cm)</li>
+                        <li><strong>Število prečk:</strong> 22 Medium Jumbo</li>
+                        <li><strong>Dolžina skale:</strong> 24.75" (62,87 cm)</li>
+                        <li><strong>Pickupi:</strong> Custom Burstbucker Alnico II</li>
+                        <li><strong>Kontrole:</strong> 2x Volume, 2x Tone, 3-smerno stikalo</li>
+                        <li><strong>Most:</strong> ABR-1 Tune-O-Matic z aluminijasto stop tailpiece</li>
+                        <li><strong>Barva:</strong> Tobacco Burst</li>
+                        <li><strong>Posebnosti:</strong> Slash podpis na zadnji strani glave vratu</li>
+                    </ul>
+                    <h3>Cena: 2999,99 €</h3>
+                    <button class="btn btn-primary add-to-cart" data-id="1" data-name="Slash Signature" data-price="2999.99">
+                        Dodaj v košarico
+                    </button>
+                    <a href="../electric-guitars.html" class="btn btn-secondary">Nazaj</a>
+
+                    
+                </div>
+                
+                <!-- Audio sekcija -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="custom-audio-container">
+                        <label class="audio-label">Poslušaj zvok kitare:</label>
+                        <audio controls>
+                            <source src="../audio\victoria.mp3" type="audio/mpeg">
+                            Vaš brskalnik ne podpira audio elementa.
+                        </audio>
+                    </div>
+                    <div class="custom-video-container mt-3">
+                        <label class="video-label">Oglej si video predstavitev:</label>
+                        <video controls width="100%">
+                            <source src="../video\victoria.mp4" type="video/mp4">
+                            Vaš brskalnik ne podpira video elementa.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Guitar Store. Vse pravice pridržane.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Funkcija za dodajanje izdelka v košarico
+        function addToCart(id, name, price) {
+            // Pridobite obstoječe izdelke iz lokalne shrambe
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+            // Dodajte nov izdelek v košarico
+            cart.push({ id, name, price });
+    
+            // Shranite posodobljeno košarico nazaj v lokalno shrambo
+            localStorage.setItem('cart', JSON.stringify(cart));
+    
+            // Prikaz obvestila
+            alert(`Izdelek "${name}" je bil dodan v košarico za ${price.toFixed(2)} €.`);
+        }
+    
+        // Preverite, ali gumb obstaja, in dodajte dogodek
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButton = document.querySelector('.add-to-cart');
+            if (addToCartButton) {
+                addToCartButton.addEventListener('click', function () {
+                    const id = this.dataset.id; // Pridobite ID iz atributa data-id
+                    const name = this.dataset.name; // Pridobite ime iz atributa data-name
+                    const price = parseFloat(this.dataset.price); // Pridobite ceno iz atributa data-price
+    
+                    addToCart(id, name, price); // Pokličite funkcijo za dodajanje v košarico
+                });
+            } else {
+                console.error('Gumb "Dodaj v košarico" ni bil najden.');
+            }
+        });
+    </script>
+</body>
+</html>
